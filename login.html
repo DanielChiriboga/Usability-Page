@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UpShop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="website icon" type="png" href="U.png">
+    <script src="funciones.js"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="signin background-image">
+        <div class="arriba">
+            <h2>UpShop</h2>
+            <ul>
+                <li><a href="#" id="enlace" onclick="LogIn()">LogIn</a></li>
+                <li><a href="#" id="enlace" onclick="SignUp()">SignUp</a></li>
+                <li><a href="#" onclick="visit();">Visit</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+        <div class="content" id="content">
+            <!-- Cambiar el logo -->
+            <img src="logo.png" alt="Logo">
+
+            <h2>LogIn</h2>
+            <div class="form">
+                <div class="inputBox">
+                    <input type="text" id="loginEmail" required>
+                    <i>Email</i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="loginPass" required>
+                    <i>Password</i>
+                    <div class="right-text">
+                        <a id="icon" href="#" onclick="togglePassword('loginPass')">Ver</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="links">
+                        <a href="#" onclick="forgotPass()">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Enter" onclick="login()">
+                </div>
+            </div>
+        </div>
+
+        <div class="content2" id="content2" style="display: none";>
+            <!-- Cambiar el logo --> 
+            <img src="logo.png" alt="Logo">
+
+            <h2>SignUp</h2>
+            <div class="form">
+                <div class="inputBox">
+                    <input type="text" id="signupUsername" required>
+                    <i>Username</i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="signupEmail" required>
+                    <i>Email</i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="signupPass" required>
+                    <i>Password</i>
+                    <div class="right-text">
+                        <a id="icon2" href="#" onclick="togglePassword('signupPass')">Ver</a>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Enter" onclick="signup()">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Dato en Alerta</title>
+</head>
+<body>
+
+<input type="text" id="miCampoDeTexto" placeholder="Ingrese un dato">
+<button onclick="mostrarAlerta()">Mostrar Alerta</button>
+
+<script>
+function mostrarAlerta() {
+    // Obtener el valor ingresado en el campo de texto
+    const userInput = document.getElementById('miCampoDeTexto').value;
+
+    // Mostrar el valor en una alerta
+    alert("Dato ingresado: " + userInput);
+}
+</script>
+
+</body>
+</html>
